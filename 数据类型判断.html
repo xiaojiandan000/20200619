@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //如何区分对象跟数组？
+
+        //1、判断一个数据是不是数组：
+         var arr = [1]
+         var obj = {}
+         var nu = null
+         var str = '123'
+         var num  = 123
+         var un = undefined;
+         //Array.isArray()判断一个数据是否是数组,(参数)
+         //使用：需要保证一个数据必须是数组的时候
+        var res = Array.isArray(obj)
+        console.log(res)
+        //2、通过constuctor获取构造函数的方式，区分数组与对象
+            //js每一个数组都有构造函数
+            //js除了null、undefined，其他数据都具有构造函数
+        console.log(arr.constructor===Array)//true
+        console.log(obj.constructor===Object)//true
+        console.log(arr.constructor===Object)//false
+        console.log(obj.constructor===Array)//false
+        console.log(str.constructor)
+        console.log(num.constructor)
+        //console.log(nu.constructor)//报错，null属于object，没有构造函数
+        //console.log(un.constructor)//报错，没有构造函数
+        //3、如何判断数据是null
+        console.log(nu === null)//true
+        //4、instanceof判断一个数据可能是数组 对象的时候用,不能区分对象，可以保证是不是数组
+        console.log([] instanceof Array)//true
+        console.log({} instanceof Object)//true
+
+        var a = [];
+        var b = a.constructor === Array && a.constructor === Object
+        var c = a.constructor === Array || a.constructor === Object
+        console.log(b)//false
+        console.log(c)//true
+
+
+     var data = '111';
+         data = 123;
+         data = true;
+     var data1 = undefined;
+     var data2 = null; 
+     var data3 = function fun(){}
+     console.log(data.constructor === Number)
+     console.log(data.constructor === String)
+     console.log(data.constructor === Boolean)
+     console.log(data1 === undefined)
+     console.log(data2 === null)
+     console.log(data instanceof Array)  
+     console.log(data.constructor === Object) 
+     console.log(data3.constructor === Function)
+
+     console.log(typeof data != Number)
+
+    var a;
+    var b;
+    var c;
+    var str = typeof a != Number && b.constructor ===Array || c.constructor === String
+    </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //数组中存放的都是相同的数据类型，要是数组，要么对象，对象中存放不同的数据类型结构
+
+        var swipers = [
+            'https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3574127451,3300961108&fm=26&gp=0.jpg',
+            'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3314189121,1022414755&fm=26&gp=0.jpg',
+            'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3892521478,1695688217&fm=26&gp=0.jpg'
+        ];
+        var res = '';
+        for (var i = 0; i < swipers.length; i++) {
+            res += '<img src =\" ' + swipers[i] + '\">'
+        }
+        // document.write(res)
+
+        var nav = [
+            {
+                title: '会员中心',
+                icon: 'http://www.axsharAa31e53e80b67cee4'
+            }, {
+                title: '种草专辑',
+                icon: 'http://www.axshareagesa3a5046d8'
+            }, {
+                title: '精选品牌',
+                icon: 'http://www.axsa980de4e6b48f31e0d0b854'
+            }, {
+                title: '零全中心',
+                icon: 'http://www.axshare.c1%B5/2bec15c57d47d'
+            }, {
+                title: '签到',
+                icon: 'http://www.axshare.cnc57d47diconfont'
+            }
+        ]
+
+        var classify = [
+            {
+                title: '精选',
+                describe: '为你推荐'
+            },
+            {
+                title: '进口',
+                describe: '优质进口'
+            },
+            {
+                title: '优惠',
+                describe: '特惠好物'
+            },
+            {
+                title: '新品',
+                describe: '精选新品'
+            }
+        ]
+        var goods = [
+            {
+                img: 'http://www.axshare.c1%B5/2bec15c57d47d.png',
+                title: 'Daisy女士2020春季新款白色纯棉印花圆领短袖衬衣',
+                price: '￥99.0元',
+                delPrice: '已售899件'
+            },
+            {
+                img: 'http://www.axshare.c1%B5/2bec15c57d47d.png',
+                title: 'Daisy女士2020春季新款白色纯棉印花圆领短袖衬衣',
+                price: '￥99.0元',
+                delPrice: '已售899件'
+            },
+            {
+                img: 'http://www.axshare.c1%B5/2bec15c57d47d.png',
+                title: 'Daisy女士2020春季新款白色纯棉印花圆领短袖衬衣',
+                price: '￥99.0元',
+                delPrice: '已售899件'
+            },
+            {
+                img: 'http://www.axshare.c1%B5/2bec15c57d47d.png',
+                title: 'Daisy女士2020春季新款白色纯棉印花圆领短袖衬衣',
+                price: '￥99.0元',
+                delPrice: '已售899件'
+            }
+        ]
+        var swper_nav = {
+            swper: [
+                'https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3574127451,3300961108&fm=26&gp=0.jpg',
+                'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3314189121,1022414755&fm=26&gp=0.jpg',
+                'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3892521478,1695688217&fm=26&gp=0.jpg',
+            ],
+            nav: [
+                {
+                    icon: 'http://www.axsharAa31e53e80b67cee4',
+                    title: '会员中心'
+                }, {
+                    icon: 'http://www.axshareagesa3a5046d8',
+                    title: '种草专辑',
+                }, {
+                    icon: 'http://www.axsa980de4e6b48f31e0d0b854',
+                    title: '精选品牌',
+                }, {
+                    icon: 'http://www.axshare.c1%B5/2bec15c57d47d',
+                    title: '零全中心',
+                }, {
+                    icon: 'http://www.axshare.cnc57d47diconfont',
+                    title: '签到',
+                }
+            ]
+        }
+
+
+        var page = {
+            header: {
+                title: "限时抢购",
+                time: '03:09:56',
+                describe: '每天10点限量秒杀'
+            },
+            goods: {
+                icon: 'http://www.axshare.cnc57d47diconfont.png',
+                price: '￥99.0元',
+                delPrice: '￥109.0元'
+            },
+            classify: {
+                title: '每日特价',
+                describe: '每天10点限量秒杀'
+            }
+        }
+        //分类
+        var prodece = [
+            {
+                title: '热门推荐',
+                list: {
+                    cart: '热门',
+                    list: {
+                        imgSrc: '',
+                        list: [
+                            {
+                                title: '热门精选',
+                                list: [
+                                    {
+                                        name: '123',
+                                        imgSrc: ''
+                                    },
+                                ]
+                            },
+                            {
+                                title: '珠宝',
+                                list: [
+                                    {
+                                        name: '123',
+                                        imgSrc: ''
+                                    },
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                title: '限时抢购',
+                list: {
+                    cart: '热门',
+                    list: {
+                        imgSrc: '',
+                        list: [
+                            {
+                                title: '热门精选',
+                                list: [
+                                    {
+                                        name: '123',
+                                        imgSrc: ''
+                                    },
+                                ]
+                            },
+                            {
+                                title: '珠宝',
+                                list: [
+                                    {
+                                        name: '123',
+                                        imgSrc: ''
+                                    },
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+
+
+
+        var page = {
+            banner: [
+                'https://www.ashiu.png',
+                'https://www.ashiu.png',
+                'https://www.ashiu.png',
+                'https://www.ashiu.png'
+            ],
+            table: [
+                {
+                    icon: 'https://dhddj.png',
+                    title: '热门课程'
+                },
+                {
+                    icon: 'https://dhddj.png',
+                    title: '教育头条'
+                },
+                {
+                    icon: 'https://dhddj.png',
+                    title: '飞行活动'
+                },
+                {
+                    icon: 'https://dhddj.png',
+                    title: '咨询教师'
+                }
+            ],
+            teacher: {
+                title: '明星教师',
+                list: [
+                    {
+                        icon: 'https://sg.png',
+                        name: '张老师',
+                        describe: '小学奥数辅导'
+                    },
+                    {
+                        icon: 'https://sg.png',
+                        name: '张老师',
+                        describe: '小学奥数辅导'
+                    },
+                    {
+                        icon: 'https://sg.png',
+                        name: '张老师',
+                        describe: '小学奥数辅导'
+                    }
+                ]
+            },
+            class: {
+                title: '热门课程',
+                classList: [
+                    {
+                        icon: 'https://ajshs.pmg',
+                        describe: '幼儿英语入门课程',
+                        price: {
+                            icon: 'https://as.png',
+                            pricr: '1599.00'
+                        }
+                    },
+                    {
+                        icon: 'https://ajshs.pmg',
+                        describe: '幼儿英语入门课程',
+                        price: {
+                            icon: 'https://as.png',
+                            pricr: '1599.00'
+                        }
+                    },
+                    {
+                        icon: 'https://ajshs.pmg',
+                        describe: '幼儿英语入门课程',
+                        price: {
+                            icon: 'https://as.png',
+                            pricr: '1599.00'
+                        }
+                    },
+                    {
+                        icon: 'https://ajshs.pmg',
+                        describe: '幼儿英语入门课程',
+                        price: {
+                            icon: 'https://as.png',
+                            pricr: '1599.00'
+                        }
+                    }
+                ]
+            },
+            active: {
+                title: '热门活动',
+                list: [
+                    {
+                        icon: 'https://iii.png',
+                        title: '飞翔教育活动召集令',
+                        text: '活动进行中',
+                        num: '剩余25个名额'
+                    },
+                    {
+                        icon: 'https://iii.png',
+                        title: '飞翔教育活动召集令',
+                        text: '活动进行中',
+                        num: '剩余25个名额'
+                    },
+                    {
+                        icon: 'https://iii.png',
+                        title: '飞翔教育活动召集令',
+                        text: '活动进行中',
+                        num: '剩余25个名额'
+                    },
+                    {
+                        icon: 'https://iii.png',
+                        title: '飞翔教育活动召集令',
+                        text: '活动进行中',
+                        num: '剩余25个名额'
+                    }
+                ]
+            }
+
+        }
+
+
+        var consult = {
+            img:'https://jdj.png',
+            consultList:[
+                {
+                    icon:'https://dsiaak.png',
+                    name:'李老师',
+                    teachTime:'教龄10年',
+                    subject:'中、小学语文',
+                    describe:'坚持以用心经营着教育，用爱温暖童心，引领孩子沐浴阳光，引导孩子浸润书香。曾在读书活动中荣获“优秀 指导教师”称号。所指导的学生作文多次在省级获奖。'
+                },
+                {
+                    icon:'https://dsiaak.png',
+                    name:'Jonce',
+                    teachTime:'教龄10年',
+                    subject:'中、小学语文',
+                    describe:'坚持以用心经营着教育，用爱温暖童心，引领孩子沐浴阳光，引导孩子浸润书香。曾在读书活动中荣获“优秀 指导教师”称号。所指导的学生作文多次在省级获奖。'
+                },
+                {
+                    icon:'https://dsiaak.png',
+                    name:'刘老师',
+                    teachTime:'教龄10年',
+                    subject:'中、小学语文',
+                    describe:'坚持以用心经营着教育，用爱温暖童心，引领孩子沐浴阳光，引导孩子浸润书香。曾在读书活动中荣获“优秀 指导教师”称号。所指导的学生作文多次在省级获奖。'
+                }
+            ]
+        }
+         
+        var conOrder = {
+            member:{
+               memberName:'小小少年',
+               memberPhoneNumber:'18856231265'
+           },
+           subject:{
+               img:'https://djoihiu.png',
+               tltle:'幼儿英语入门课程',
+               price:'￥2399.00'
+           }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var arr = [
+            {
+                name: '唐三',
+                age: 13
+            },
+            {
+                name: '戴沐白',
+                age: 16
+            },
+            {
+                name: '奥斯卡',
+                age: 15
+            },
+            {
+                name: '朱竹清',
+                age: 12
+            }
+        ]
+        for (var i = 0; i < arr.length; i++) {
+            //    document.write('姓名:',arr[i].name,'年龄:',arr[i].age + '<br>')
+            if (arr[i].age >= 15) {
+                document.write(`姓名：${arr[i].name},年龄：${arr[i].age}<br>`)
+            }else{
+                console.log('姓名:', arr[i].name, '年龄:', arr[i].age)
+            }
+            
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
