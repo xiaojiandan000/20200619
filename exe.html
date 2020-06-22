@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //4、求100 以内奇数和偶数
+        // for(var i = 0;i<=100;i++){
+        //     if(i % 2 !=0 ){
+        //        console.log(i)
+        //     }else if(i % 2 == 0){
+        //         document.write(i + ' ')
+        //     }
+        // }  
+        //2、求2000-3000年中所有的闰年
+        // for(var i = 2000;i <= 3000; i++){
+        //     if(i % 4 == 0 && i % 100 !=0){
+        //         document.write(i + ' ')
+        //     }
+        // }
+        //5、求100以内与7相关的数，并求这些数的和
+        var sum = 0;
+        for (var i = 1; i < 100; i++) {
+            if (i % 7 == 0 || (i % 10) == 7 || parseInt(i / 10) == 7) {  //除以7余数为0的数，//除以10余数为7的数， //除以10取整等于7的数
+                document.write(i + " ")
+                sum += i;
+            } 
+        }
+        console.log(sum)
+        //6、9*9乘法表
+        // for(var i = 1;i<=9;i++){
+        //     for(var j = 1;j<=i;j++){
+        //         document.write(i,'*', j ,'=',i*j + ' ')
+        //     }
+        //     document.write('<br>')
+        // }
+        //3、假设一张纸厚度0.1mm，对折多少次后可厚度可以超过1km
+        // var j = 1000;
+        // var i = 0.001;
+        // for (var i = 1; i < 100; i++) {
+        //     i *= 2;
+        //     if (i >= j) {
+        //         console.log(i);
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>
